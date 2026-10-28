@@ -4,7 +4,7 @@
 //   zencalOwn  - the unlisted booking type for clients the expert brings
 //   ownCode    - the code in the expert's own link, e.g. piotr-bombol.html?link=<ownCode>
 window.AICH_BOOKING = {
-  'piotr-bombol':     { zencal: '', zencalOwn: '', ownCode: '' },
+  'piotr-bombol':     { zencal: 'https://app.zencal.io/o/ai-clinic-hours/piotr-bombol/rozmowa-11-z-piotrem-bombolem?lang=pl', zencalOwn: '', ownCode: '' },
   'bartek-lechowski': { zencal: '', zencalOwn: '', ownCode: '' },
   'tomasz-kerber':    { zencal: '', zencalOwn: '', ownCode: '' }
 };
