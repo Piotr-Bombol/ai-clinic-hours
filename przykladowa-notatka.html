@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Przykładowa notatka - AI Clinic Hours by CONSTANS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .doc { max-width: 860px; margin-inline: auto; }
+    .doc-table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+    .doc-table th, .doc-table td { text-align: left; padding: 16px 20px; border-bottom: 1px solid var(--line); vertical-align: top; font-size: 15px; }
+    .doc-table th { width: 32%; background: var(--paper); font-weight: 700; }
+    .doc-table tr:last-child th, .doc-table tr:last-child td { border-bottom: 0; }
+    .ph { background: rgba(228, 87, 46, 0.1); padding: 1px 6px; border-radius: 6px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Przejdź do treści</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-main">AI Clinic <span class="serif-italic">Hours</span></span>
+        <span class="logo-sub">by CONSTANS</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Główna nawigacja">
+        <div class="nav-links">
+          <a href="index.html#eksperci">Eksperci</a>
+          <a href="index.html#jak">Jak to działa</a>
+          <a href="index.html#cennik">Cennik</a>
+          <a href="dla-ekspertow.html">Dla ekspertów</a>
+        </div>
+        <a href="index.html#eksperci" class="btn btn-primary">Zarezerwuj godzinę</a>
+      </nav>
+      <button class="mobile-menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" id="menu-btn">Menu</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="note-section" style="min-height: 70vh; padding-top: 60px;">
+      <div class="container doc" style="position: relative;">
+        <a href="index.html#notatka" class="link-light no-print" style="display:inline-block;margin-bottom:24px;"><span aria-hidden="true">←</span> Wróć na stronę główną</a><br>
+        <span class="eyebrow" style="color: #FFB4A0;">PRZYKŁAD</span>
+        <h1 class="display-title" style="color: #fff; font-size: clamp(2.2rem, 5vw, 3.6rem); margin-bottom: 24px;">Przykładowa notatka <span class="serif-italic">po rozmowie.</span></h1>
+        <p style="color: rgba(255,255,255,0.9); margin-bottom: 32px; max-width: 640px;">Osoba prowadząca pisze ją na ekranie w ostatnich pięciu minutach. Ty zgadzasz się na każde zdanie. Dostajesz ją w ciągu godziny, na jednej stronie, którą może przeczytać zarząd.</p>
+
+        <article class="note-card" aria-labelledby="note-title">
+          <div class="note-head"><span class="note-tag">przykład</span><span style="font-size: 13px; color: #4B5563;">Wymyślona sprawa, nie rozmowa z prawdziwą osobą</span></div>
+          <p class="note-title" id="note-title">Zdanie rezerwującej osoby: W poniedziałek mówię zarządowi, czy pilotaż asystenta AI w obsłudze klienta idzie dalej, i z jakim budżetem.</p>
+          <dl class="note-fields">
+            <div><dt>Co mówię</dt><dd>Pilotaż idzie dalej, ale w zawężonym zakresie: jeden zespół, jedna kategoria zgłoszeń, osiem tygodni. Budżet proszę tylko na ten etap.</dd></div>
+            <div><dt>Czego nie twierdzę</dt><dd>Że asystent skróci czas obsługi w całej firmie. Z jednego pilotażu tego nie widać.</dd></div>
+            <div><dt>Co robię i do kiedy</dt><dd>Do środy: trzy miary sukcesu pilotażu, uzgodnione z osobą odpowiedzialną za obsługę. Do piątku: jedna strona dla zarządu.</dd></div>
+            <div><dt>Do IT (jeśli coś blokuje)</dt><dd>Pilotaż potrzebuje próbki historii zgłoszeń bez danych osobowych. Prosimy o zgodę na eksport zanonimizowanej próbki. Bez niej pilotaż nie ruszy.</dd></div>
+            <div><dt>Jeśli dalej</dt><dd>Druga sesja po decyzji zarządu: ocena oferty dostawcy. To osobna rezerwacja.</dd></div>
+          </dl>
+          <p class="note-foot">Przykład. Uzgodniona na ekranie w ostatnich pięciu minutach, wysłana w ciągu godziny po rozmowie.</p>
+        </article>
+
+        <p style="color: rgba(255,255,255,0.85); margin: 32px 0; max-width: 640px;">Notatka nie obiecuje nic poza tym, co w niej jest. Jeśli sprawa jest za duża na jedną rozmowę, pole Jeśli dalej mówi, co zrobić teraz, a co w kolejnej sesji. Pracy po rozmowie i raportu nie ma w cenie.</p>
+        <a href="index.html#eksperci" class="btn btn-primary">Zarezerwuj godzinę <span class="arrow-circle" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p>AI Clinic Hours prowadzi CONSTANS - kolektyw praktyków AI. Warszawa.</p>
+          <a href="mailto:piotr.bombol@constans.ai" style="display: inline-block; margin-top: 16px; font-weight: 600;">piotr.bombol@constans.ai</a>
+        </div>
+        <div class="footer-links">
+          <a href="dla-ekspertow.html">Dla ekspertów</a>
+          <a href="regulamin.html">Regulamin</a>
+          <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        Wersja beta, październik 2026. Każdy ekspert ustala własną cenę.
+      </div>
+    </div>
+  </footer>
+  <script>
+    (function () {
+      var b = document.getElementById('menu-btn'), n = document.getElementById('main-nav');
+      if (!b || !n) return;
+      b.addEventListener('click', function () {
+        var open = n.classList.toggle('open');
+        b.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+<script src="booking.js"></script>
+</body>
+</html>
