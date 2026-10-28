@@ -1,0 +1,195 @@
+# Sytuacje, z którymi lider przychodzi na rozmowę.
+# Każda sytuacja jest prawdziwa: wzór powtarza się w rozmowach z klientami Constans
+# (źródła w polu "zrodlo", nie trafiają na stronę). Na stronie nie ma nazw firm ani cytatów z nagrań.
+#
+# Pola:
+#   id          krótki identyfikator (litery, cyfry, myślniki), używany w linkach
+#   etykieta    2-4 słowa na chipie i nad cytatem
+#   cytat       pierwsza osoba, tak jak lider powiedziałby to przy kawie
+#   obszar      strategia | technologia | adopcja
+#   wyjdziesz   2-4 rzeczy, które realnie mieszczą się w notatce po 60 minutach
+#   notatka     (opcjonalnie) przykładowa notatka: pięć punktów; pierwsze trzy sytuacje z notatką idą do animacji w hero
+#   [[sytuacja.kto]]  kolejno: pierwsza osoba (dlaczego), druga osoba (kiedy)
+
+[[sytuacja]]
+id = "pilotaz"
+etykieta = "Pilotaż przed zarządem"
+cytat = "W czwartek mam zarząd i muszę powiedzieć, czy pilotaż idzie dalej. Wyniki są mieszane, więc najpierw chcę to po cichu przegadać z kimś z zewnątrz."
+obszar = "strategia"
+wyjdziesz = [
+  "Zdanie dla zarządu na czwartek: czy pilotaż idzie dalej i w jakim zakresie.",
+  "Listę tego, czego jeszcze nie obiecujesz, bo z jednego pilotażu tego nie widać.",
+  "Trzy miary sukcesu następnego etapu i datę, kiedy je sprawdzisz.",
+]
+zrodlo = "grit-client-voice.md:23-24, 71-74, 97-98; grit-xtb-sessions-a.md:107"
+notatka = [
+  { naglowek = "Co mówię", tresc = "Pilotaż idzie dalej, ale w węższym zakresie: jeden zespół, jedna kategoria zgłoszeń, osiem tygodni. Budżet proszę tylko na ten etap." },
+  { naglowek = "Czego nie twierdzę", tresc = "Że asystent skróci czas obsługi w całej firmie. Z jednego pilotażu tego nie widać." },
+  { naglowek = "Co robię i do kiedy", tresc = "Do wtorku: trzy miary sukcesu uzgodnione z szefową obsługi. Do środy wieczorem: jedna strona dla zarządu na czwartek." },
+  { naglowek = "Do IT", tresc = "Potrzebujemy próbki zgłoszeń bez danych osobowych. Prosimy o zgodę na eksport do 10 listopada." },
+  { naglowek = "Jeśli dalej", tresc = "Po decyzji zarządu: rozmowa o ofercie dostawcy. To osobna rezerwacja." },
+]
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+dlaczego = "Układa z zarządami plan AI. Poprowadził warsztat o planie AI dla 30 osób z najwyższego kierownictwa dużej firmy."
+[[sytuacja.kto]]
+ekspert = "tomasz-kerber"
+kiedy = "gdy pilotaż utknął na danych albo na systemach."
+
+[[sytuacja]]
+id = "licencje"
+etykieta = "Licencje bez użytkowników"
+cytat = "Kupiliśmy licencje na asystenta AI dla całego działu. Po kilku miesiącach używa go garstka osób, a w poniedziałek szef zapytał, co z tym robimy."
+obszar = "adopcja"
+wyjdziesz = [
+  "Zdanie dla szefa: co sprawdzacie, do kiedy i czego jeszcze nie obiecujesz.",
+  "Trzy możliwe powody, dla których ludzie nie korzystają, do sprawdzenia w tym tygodniu.",
+  "Jedną zmianę w tygodniu pracy zespołu i osobę, która jej pilnuje.",
+]
+zrodlo = "grit-client-voice.md:33-34, 39-40, 116-117, 136"
+notatka = [
+  { naglowek = "Co mówię", tresc = "Licencje zostają do końca kwartału. Przez sześć tygodni sprawdzamy, co blokuje ludzi: nawyk, brak czasu czy samo narzędzie." },
+  { naglowek = "Czego nie twierdzę", tresc = "Że po sześciu tygodniach korzystać będzie cały dział. Obiecuję tylko odpowiedź, co blokuje." },
+  { naglowek = "Co robię i do kiedy", tresc = "W poniedziałek na odprawie: dwie osoby pokazują, do czego same używają asystenta. Od piątku raport tygodniowy robimy z AI." },
+  { naglowek = "Do IT", tresc = "Prosimy o raport użycia licencji z ostatnich 90 dni, do piątku. Bez niego nie wiemy, od kogo zacząć." },
+  { naglowek = "Jeśli dalej", tresc = "Za sześć tygodni, jeśli trzeba: kolejna rozmowa o wynikach i o tym, czy przedłużać licencje." },
+]
+[[sytuacja.kto]]
+ekspert = "bartek-lechowski"
+dlaczego = "W Constans odpowiada za to, żeby zespoły klientów zaczęły pracować z AI. Wcześniej przez ponad 18 lat prowadził zespoły w IKEA, Danone, Mars, PLAY i Empiku."
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+kiedy = "gdy najpierw musisz odpowiedzieć szefowi, co dalej z licencjami."
+
+[[sytuacja]]
+id = "oferta"
+etykieta = "Oferta dostawcy"
+cytat = "Dostawca przysłał ofertę i prezentację, która wygląda świetnie. W piątek mam powiedzieć, czy podpisujemy, a nie umiem odróżnić tego, co działa, od tego, co ładnie wygląda na slajdach."
+obszar = "technologia"
+wyjdziesz = [
+  "Trzy pytania do dostawcy: o dane, o koszt utrzymania i o próbę na Waszych dokumentach.",
+  "Stanowisko na piątek: kupić na próbę jedną część oferty czy poczekać, i dlaczego.",
+  "Pytania do IT o to, gdzie dostawca będzie trzymał Wasze dane.",
+]
+zrodlo = "grit-client-voice.md:33-34, 81-82, 137; panel/PER-5.md"
+notatka = [
+  { naglowek = "Co mówię", tresc = "Kupujemy na trzy miesiące tylko analizę umów, z prawem wyjścia. Całej platformy na razie nie bierzemy." },
+  { naglowek = "Czego nie twierdzę", tresc = "Że wynik z prezentacji powtórzy się na naszych umowach. Dostawca jeszcze tego nie pokazał." },
+  { naglowek = "Co robię i do kiedy", tresc = "Jutro wysyłam dostawcy trzy pytania. Podpis dopiero po odpowiedziach. Do końca miesiąca: próba na 200 naszych umowach." },
+  { naglowek = "Do IT", tresc = "Sprawdźcie, gdzie dostawca trzyma dane i czy podpisze umowę powierzenia. Potrzebuję odpowiedzi przed próbą." },
+  { naglowek = "Jeśli dalej", tresc = "Po próbie: rozmowa o wynikach i warunkach umowy. To osobna rezerwacja." },
+]
+[[sytuacja.kto]]
+ekspert = "tomasz-kerber"
+dlaczego = "Pracuje jako architekt IT i prowadzi software house, więc zna takie projekty od strony wykonawcy."
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+kiedy = "gdy na stole leży kilka ofert i każda obiecuje co innego."
+
+[[sytuacja]]
+id = "budzet"
+etykieta = "Budżet na AI"
+cytat = "W grudniu zarząd zatwierdza budżet. Mam przyjść z kwotą na AI na przyszły rok i ją obronić, a oni nie lubią niespodzianek."
+obszar = "strategia"
+wyjdziesz = [
+  "Zdanie dla zarządu: od jakiej kwoty zaczynacie i pod jakim warunkiem wydajecie więcej.",
+  "Listę tego, co zostaje poza budżetem, z powodem przy każdej pozycji.",
+  "Krok na styczeń i warunek, przy którym przestajecie wydawać.",
+]
+zrodlo = "grit-client-voice.md:55-56, 59-60, 87-88, 93-94, 133"
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+dlaczego = "Zbudował od zera i sprzedał własną agencję, więc budżet zna od strony właściciela. Dziś układa z zarządami plan AI."
+[[sytuacja.kto]]
+ekspert = "bartek-lechowski"
+kiedy = "gdy kwota zależy od tego, czy zespoły zaczną pracować z AI."
+
+[[sytuacja]]
+id = "zespol-sie-boi"
+etykieta = "Zespół się boi"
+cytat = "W środę mam spotkanie z zespołem o AI. Część ludzi się boi, a jedna osoba otwarcie mówi, że to bez sensu, i reszta zaczyna jej słuchać."
+obszar = "adopcja"
+wyjdziesz = [
+  "Pierwsze pięć zdań na spotkanie z zespołem: co mówisz o obawach, a czego nie obiecujesz.",
+  "Plan rozmowy w cztery oczy z osobą, która jest przeciw.",
+  "Imię osoby z zespołu, która pokaże pierwszy przykład, i datę.",
+]
+zrodlo = "grit-client-voice.md:75-76, 116-117; grit-xtb-sessions-b.md:75, 78"
+[[sytuacja.kto]]
+ekspert = "bartek-lechowski"
+dlaczego = "W Constans prowadzi wdrażanie AI w zespołach klientów, a wcześniej w IKEA, PLAY i Empiku przeprowadzał zespoły przez duże zmiany."
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+kiedy = "gdy na spotkaniu chcesz pokazać, jak Ty pracujesz z AI."
+
+[[sytuacja]]
+id = "it-blokuje"
+etykieta = "IT blokuje"
+cytat = "Zespół od miesiąca czeka na zgodę IT na narzędzie AI i dostęp do danych. Nie wiem, jak z nimi rozmawiać, żeby znowu nie odbić się od ściany."
+obszar = "technologia"
+wyjdziesz = [
+  "Akapit do IT: jakie narzędzie, po co, jakie dane i czego nie potrzebujesz.",
+  "Wariant na start w narzędziach, które IT już zatwierdziło.",
+  "Nazwisko osoby, która to zatwierdza, i termin, do którego prosisz o odpowiedź.",
+]
+zrodlo = "grit-xtb-sessions-b.md:60, 114; grit-xtb-sessions-a.md:50, 54; panel/PER-2.md"
+[[sytuacja.kto]]
+ekspert = "tomasz-kerber"
+dlaczego = "Od ponad 15 lat pracuje w IT dla bankowości i płatności, przy systemach dla Mastercard, Commerzbank i Nexi."
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+kiedy = "gdy zgodę musi dać ktoś z zarządu."
+
+[[sytuacja]]
+id = "wlasna-praca"
+etykieta = "Własna praca z AI"
+cytat = "Mój dzień to spotkania i poczta. Chcę, żeby AI co rano układało mi listę zadań z maili i kalendarza, ale na kurs nie mam czasu."
+obszar = "strategia"
+wyjdziesz = [
+  "Jedno zadanie z Twojego dnia, zrobione razem na ekranie podczas rozmowy.",
+  "Instrukcję krok po kroku, żeby jutro rano zrobić to samodzielnie.",
+  "Jedną zasadę: czego nie wklejasz do narzędzia, na przykład danych klientów.",
+]
+zrodlo = "grit-client-voice.md:128; grit-xtb-sessions-a.md:25, 30, 32; grit-xtb-sessions-b.md:89"
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+dlaczego = "We wrześniu 2026 poprowadził 17 rozmów 1:1 z menedżerami w programie AI jednej firmy."
+[[sytuacja.kto]]
+ekspert = "bartek-lechowski"
+kiedy = "gdy chcesz, żeby razem z Tobą zaczął cały zespół."
+
+[[sytuacja]]
+id = "drugie-podejscie"
+etykieta = "Drugie podejście do AI"
+cytat = "Rok temu wydaliśmy pieniądze na projekt AI i nic z tego nie wyszło. Teraz zarząd chce spróbować jeszcze raz, a ludzie na samo hasło AI przewracają oczami."
+obszar = "adopcja"
+wyjdziesz = [
+  "Trzy możliwe przyczyny, dla których za pierwszym razem nie wyszło, do sprawdzenia u Was.",
+  "Zdanie dla zarządu o drugim podejściu i listę tego, czego nie obiecujesz.",
+  "Pierwszy mały krok z datą i kryterium, po którym poznacie, że nie działa.",
+]
+zrodlo = "src-natalia-cwik-2026-08-10.md:44-46; out/buyer-narrative.md:11"
+[[sytuacja.kto]]
+ekspert = "bartek-lechowski"
+dlaczego = "Odpowiadał za P&L ponad 540 mln euro i prowadził zmiany w dużych firmach."
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+kiedy = "gdy najpierw musisz wytłumaczyć zarządowi, co poszło nie tak."
+
+[[sytuacja]]
+id = "kupic-czy-zbudowac"
+etykieta = "Kupić, zbudować czy czekać"
+cytat = "Dostawca ma gotowe narzędzie, a nasze IT twierdzi, że zbuduje to taniej samo. Do końca miesiąca mam zdecydować, a nie umiem sprawdzić, kto ma rację."
+obszar = "technologia"
+wyjdziesz = [
+  "Trzy pytania, które zadasz dostawcy i swojemu IT, zanim zdecydujesz.",
+  "Kryteria, po których porównasz oba warianty, i datę decyzji.",
+  "Listę kosztów utrzymania, o które trzeba zapytać, zanim cokolwiek podpiszesz.",
+]
+zrodlo = "grit-xtb-sessions-a.md:31, 45, 110; grit-xtb-sessions-b.md:122"
+[[sytuacja.kto]]
+ekspert = "tomasz-kerber"
+dlaczego = "Prowadzi software house i nadal programuje, więc budowę oprogramowania zna od środka."
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+kiedy = "gdy decyzja zależy od planu AI całej firmy."

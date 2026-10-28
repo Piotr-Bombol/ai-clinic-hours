@@ -1,0 +1,64 @@
+# Profil eksperta. Każde zdanie musi mieć źródło (pole "zrodlo" albo komentarz) i akceptację eksperta.
+slug = "bartek-lechowski"
+imie = "Bartek"
+nazwisko = "Lechowski"
+narzednik = "Bartkiem Lechowskim"
+narzednik_imie = "Bartkiem"
+dopelniacz_imie = "Bartka"
+rola = "Partner Constans"
+obszar = "adopcja"
+kolejnosc = 2
+zdjecie = "bartek.jpg"
+zdjecie_alt = "Bartek Lechowski"
+linkedin = ""
+jednym_zdaniem = "Pomaga liderom ustalić, jak zespół ma zacząć pracować z AI: kto pierwszy, od jakiego zadania i co powiedzieć tym, którzy się boją."
+meta_opis = "Prywatna rozmowa 1:1 z Bartkiem Lechowskim o zespole, który nie korzysta z AI, obawach ludzi i drugim podejściu. 60 minut, notatka, 1 500 zł netto."
+og_linia = "zespół, nawyki, zmiana"
+jezyki = ["polski"]
+branze = ["handel", "FMCG", "telekomunikacja"]
+wie_o = ["adopcja AI", "zmiana organizacyjna", "doświadczenie klienta", "przywództwo w zmianie"]
+
+[[dowody]]
+tekst = "W Constans odpowiada za wdrażanie AI w zespołach klientów: żeby ludzie zaczęli korzystać z narzędzi, które firma już ma."
+zrodlo = "JAK_PITCHUJEMY_CONSTANS.md:94; CFP_playbook.md:124 (partner, adopcja i zmiana organizacyjna)"
+
+[[dowody]]
+tekst = "Ponad 18 lat na najwyższych stanowiskach w IKEA, Danone, Mars, PLAY i Empiku."
+zrodlo = "CFP_playbook.md:124 (18 lat); JAK:94 (20 lat). Wersja zachowawcza."
+
+[[dowody]]
+tekst = "Odpowiadał za P&L ponad 540 mln euro."
+zrodlo = "CFP:124; Outreach_brain.md:151"
+
+[[dowody]]
+tekst = "W PLAY wskaźnik NPS wzrósł o 183%."
+zrodlo = "JAK:94; Brandbook:292; CFP:124"
+
+[[liczby]]
+wartosc = "18+ lat"
+opis = "na najwyższych stanowiskach: IKEA, Danone, Mars, PLAY, Empik"
+zrodlo = "CFP:124"
+
+[[liczby]]
+wartosc = "540 mln €"
+opis = "P&L, za który odpowiadał"
+zrodlo = "CFP:124"
+
+[[liczby]]
+wartosc = "+183%"
+opis = "NPS w PLAY"
+zrodlo = "JAK:94"
+
+[nie_dla]
+tekst = "Nie przychodź do Bartka, jeśli potrzebujesz technicznej oceny oferty albo zdania dla zarządu o budżecie i planie AI."
+zamiast = ["tomasz-kerber", "piotr-bombol"]
+
+[poleca]
+imie_nazwisko = ""
+rola = ""
+cytat = ""
+
+[rezerwacja]
+zencal = ""
+zencal_wlasny = ""
+kod_linku = ""

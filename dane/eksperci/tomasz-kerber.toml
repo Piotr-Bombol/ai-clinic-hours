@@ -1,0 +1,59 @@
+# Profil eksperta. Każde zdanie musi mieć źródło (pole "zrodlo" albo komentarz) i akceptację eksperta.
+slug = "tomasz-kerber"
+imie = "Tomasz"
+nazwisko = "Kerber"
+narzednik = "Tomaszem Kerberem"
+narzednik_imie = "Tomaszem"
+dopelniacz_imie = "Tomasza"
+rola = "Partner Constans"
+obszar = "technologia"
+kolejnosc = 3
+zdjecie = "tomasz.jpg"
+zdjecie_alt = "Tomasz Kerber"
+linkedin = ""
+jednym_zdaniem = "Pomaga sprawdzić, czy narzędzie AI zadziała na danych Twojej firmy, ile będzie kosztować jego utrzymanie i co powiedzieć IT."
+meta_opis = "Prywatna rozmowa 1:1 z Tomaszem Kerberem o ofercie dostawcy AI, wyborze między kupnem a budową i rozmowie z IT. 60 minut, notatka, 1 500 zł netto."
+og_linia = "oferta dostawcy, dane, IT"
+jezyki = ["polski"]
+branze = ["bankowość", "płatności", "fintech"]
+wie_o = ["architektura systemów", "integracja AI z systemami firmy", "bezpieczeństwo danych", "koszt utrzymania AI"]
+
+[[dowody]]
+tekst = "W Constans odpowiada za budowę rozwiązań AI na danych i w systemach klientów."
+zrodlo = "JAK_PITCHUJEMY_CONSTANS.md:93; CFP_playbook.md:132 (partner, technologia i inżynieria)"
+
+[[dowody]]
+tekst = "Ponad 15 lat w IT dla bankowości i płatności, przy systemach dla Mastercard, Commerzbank i Nexi."
+zrodlo = "JAK:93; Brandbook:284; CFP:132 (bio PL oznaczone 'do walidacji')"
+
+[[dowody]]
+tekst = "Pracował przy systemach płatności, które przetworzyły miliardy transakcji."
+zrodlo = "JAK:93; Brandbook:284; CFP:132"
+
+[[dowody]]
+tekst = "Prowadzi software house, pracuje jako architekt IT i nadal programuje."
+zrodlo = "CFP:132, 143; Brandbook:284"
+
+[[liczby]]
+wartosc = "15+ lat"
+opis = "w IT dla bankowości i płatności"
+zrodlo = "JAK:93"
+
+[[liczby]]
+wartosc = "Miliardy"
+opis = "transakcji w systemach, przy których pracował"
+zrodlo = "JAK:93"
+
+[nie_dla]
+tekst = "Nie przychodź do Tomasza, jeśli sprawa dotyczy ludzi, którzy nie chcą korzystać z AI, albo zdania dla zarządu o planie całej firmy."
+zamiast = ["bartek-lechowski", "piotr-bombol"]
+
+[poleca]
+imie_nazwisko = ""
+rola = ""
+cytat = ""
+
+[rezerwacja]
+zencal = ""
+zencal_wlasny = ""
+kod_linku = ""

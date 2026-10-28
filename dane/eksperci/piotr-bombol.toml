@@ -1,0 +1,69 @@
+# Profil eksperta. Każde zdanie musi mieć źródło (pole "zrodlo" albo komentarz) i akceptację eksperta.
+slug = "piotr-bombol"
+imie = "Piotr"
+nazwisko = "Bombol"
+narzednik = "Piotrem Bombolem"
+narzednik_imie = "Piotrem"
+dopelniacz_imie = "Piotra"
+rola = "Partner Constans"
+obszar = "strategia"
+kolejnosc = 1
+zdjecie = "piotr.jpg"
+zdjecie_alt = "Piotr Bombol"
+linkedin = ""
+jednym_zdaniem = "Pomaga zarządom ustalić, od czego zacząć z AI, ile na to wydać i czego jeszcze nie obiecywać."
+meta_opis = "Prywatna rozmowa 1:1 z Piotrem Bombolem o planie AI dla zarządu, pilotażu i budżecie. 60 minut online, notatka na jedną stronę, 1 500 zł netto."
+og_linia = "plan AI dla zarządu, pilotaż, budżet"
+jezyki = ["polski"]
+branze = ["finanse", "budownictwo", "marketing", "FMCG"]
+wie_o = ["strategia AI", "plan AI dla zarządu", "ocena pilotażu AI", "budżet na AI", "praca menedżera z AI"]
+
+[[dowody]]
+tekst = "Ponad 13 lat w usługach profesjonalnych, między innymi w Deloitte i DDB."
+zrodlo = "JAK_PITCHUJEMY_CONSTANS.md:92; Brandbook v2.3:278; CFP_playbook.md:128"
+
+[[dowody]]
+tekst = "We wrześniu 2026 poprowadził 17 rozmów 1:1 z menedżerami w programie AI jednej firmy."
+zrodlo = "grit-xtb-sessions-a.md:3,7; grit-xtb-sessions-b.md:3"
+
+[[dowody]]
+tekst = "Zbudował od zera i sprzedał własną agencję, która urosła do 35 osób."
+zrodlo = "JAK:92; Brandbook:278; Outreach_brain.md:159-162"
+
+[[dowody]]
+tekst = "Współtworzył produkt AI, z którego korzysta ponad 50 000 osób w ponad 80 krajach."
+zrodlo = "JAK:92 (53 000, 80+ krajów); CFP:128 (53 000, 145 krajów); stara strona (55 000, 145). Wersja zachowawcza, prawdziwa przy każdym źródle."
+
+[[liczby]]
+wartosc = "13+ lat"
+opis = "w usługach profesjonalnych, w tym Deloitte i DDB"
+zrodlo = "JAK:92"
+
+[[liczby]]
+wartosc = "50 000+"
+opis = "użytkowników produktu AI, który współtworzył"
+zrodlo = "JAK:92, CFP:128"
+
+[[liczby]]
+wartosc = "30 osób"
+opis = "z najwyższego kierownictwa dużej firmy na jego warsztacie o kierunku AI"
+zrodlo = "Outreach_brain.md:99, 111; JAK:100"
+
+[[liczby]]
+wartosc = "17"
+opis = "rozmów 1:1 z menedżerami w programie AI jednej firmy, wrzesień 2026"
+zrodlo = "grit-xtb-sessions-a.md:3"
+
+[nie_dla]
+tekst = "Nie przychodź do Piotra, jeśli potrzebujesz technicznej oceny systemu albo oferty, albo planu rozmowy z zespołem, który nie chce pracować z AI."
+zamiast = ["tomasz-kerber", "bartek-lechowski"]
+
+[poleca]
+imie_nazwisko = ""
+rola = ""
+cytat = ""
+
+[rezerwacja]
+zencal = "https://app.zencal.io/o/ai-clinic-hours/piotr-bombol/rozmowa-11-z-piotrem-bombolem?lang=pl"
+zencal_wlasny = ""
+kod_linku = ""

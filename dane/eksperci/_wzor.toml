@@ -1,0 +1,49 @@
+# WZÓR PROFILU. Skopiuj jako dane/eksperci/<imie-nazwisko>.toml (bez polskich znaków w nazwie pliku).
+# Pliki zaczynające się od "_" generator pomija.
+# Zasada: każde zdanie o osobie ma źródło (pole "zrodlo", na stronę nie trafia) i akceptację tej osoby.
+# Piszemy w trzeciej osobie. Bez zdań w pierwszej osobie w imieniu eksperta.
+
+slug = "imie-nazwisko"            # adres strony: imie-nazwisko.html
+imie = "Imię"
+nazwisko = "Nazwisko"
+narzednik = "Imieniem Nazwiskiem" # z kim: "rozmowa z Anną Kowalską"
+narzednik_imie = "Imieniem"       # "Zarezerwuj godzinę z Anną"
+dopelniacz_imie = "Imienia"       # "Przyjdź do Anny, jeśli"
+rola = "Kim jest dziś, jednym zwrotem"
+obszar = "strategia"              # strategia | technologia | adopcja (etykiety w dane/strona.toml)
+kolejnosc = 10                    # kolejność na liście
+zdjecie = "imie.jpg"              # plik w zasoby/img/, portret pionowy, min. 570 px szerokości
+zdjecie_alt = "Imię Nazwisko"
+linkedin = ""                     # pełny adres profilu; trafia do danych strukturalnych (sameAs)
+jednym_zdaniem = "W czym pomaga liderowi, do 22 słów."
+meta_opis = "Opis dla Google, 120-155 znaków: z czym przyjść, cena, notatka po rozmowie."
+og_linia = "trzy tematy po przecinku (karta do udostępniania)"
+jezyki = ["polski"]
+branze = ["branża", "branża"]
+wie_o = ["temat", "temat"]        # dane strukturalne (knowsAbout)
+# cena_netto = 1500               # tylko gdy inna niż domyślna
+
+[[dowody]]                        # 2-4 zdania o doświadczeniu; dwa pierwsze idą na kartę na stronie głównej
+tekst = "Fakt z liczbą, firmą albo rolą."
+zrodlo = "skąd to wiemy"
+
+[[liczby]]                        # pierwsza liczba trafia też do pasa liczb na stronie głównej
+wartosc = "15+ lat"
+opis = "czego dotyczy"
+zrodlo = "skąd to wiemy"
+
+[nie_dla]
+tekst = "Nie przychodź do Imienia, jeśli ..."
+zamiast = ["inny-slug"]           # do kogo lepiej
+
+[poleca]                          # tylko za pisemną zgodą osoby polecającej; puste = sekcja ukryta
+imie_nazwisko = ""
+rola = ""
+cytat = ""
+
+[rezerwacja]
+zencal = ""                       # link do typu spotkania w Zencal, z ?lang=pl; puste = mail z rezerwacją
+zencal_wlasny = ""                # ukryty typ spotkania dla klientów z własnego linku eksperta
+kod_linku = ""                    # kod w linku eksperta: <strona>?link=<kod>
+
+# Sytuacje: dopisz slug eksperta w dane/sytuacje.toml, w [[sytuacja.kto]] tych spraw, które prowadzi.

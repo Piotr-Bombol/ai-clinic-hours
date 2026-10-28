@@ -1,0 +1,235 @@
+# Treści i ustawienia strony AI Clinic Hours. Generator: build.py.
+# W tekstach można użyć **pogrubienia** i [linku](adres).
+
+[konfig]
+base_url = "https://piotr-bombol.github.io/ai-clinic-hours/"
+# false = zamknięta beta: noindex + robots.txt Disallow. Przełączyć dopiero z własną domeną i regulaminem po prawniku.
+indeksowanie = false
+# Własna domena: wpisać, np. "aiclinichours.pl", i zmienić base_url. Generator doda plik CNAME.
+domena = ""
+kontakt = "piotr.bombol@constans.ai"
+organizacja = "Constans"
+cena_netto = 1500
+vat = 0.23
+filtry_od = 6
+wersja = "Wersja beta, październik 2026"
+
+[obszary.strategia]
+etykieta = "Strategia i decyzje"
+seo = "strategia AI dla zarządu"
+
+[obszary.adopcja]
+etykieta = "Zespół i zmiana"
+seo = "adopcja AI w zespole"
+
+[obszary.technologia]
+etykieta = "Technologia i dane"
+seo = "technologia i dane"
+
+[etykiety]
+nav_sytuacje = "Z czym przychodzisz"
+nav_eksperci = "Eksperci"
+nav_jak = "Jak to działa"
+nav_cena = "Cena"
+nav_dla_ekspertow = "Dla ekspertów"
+nav_notatka = "Przykładowa notatka"
+prowadzi = "prowadzi Constans"
+cta_glowne = "Wybierz osobę"
+doswiadczenie = "Doświadczenie"
+przyjdz_z = "Z czym przyjść"
+profil = "Cały profil"
+zarezerwuj = "Zarezerwuj godzinę"
+
+[stopka]
+opis = "AI Clinic Hours prowadzi Constans, kolektyw praktyków AI z Warszawy. Faktury wystawia Constans."
+opis_org = "Constans to kolektyw praktyków AI z Warszawy. Prowadzi AI Clinic Hours: płatne, prywatne rozmowy 1:1 liderów firm z wybranymi praktykami AI."
+
+[home]
+nad = "Dla zarządów, dyrektorów i właścicieli firm"
+h1 = "Zespół dostał szkolenie."
+h1_akcent = "Ty dostajesz godzinę."
+lead = "Rozmowa 1:1 z praktykiem AI, którego wybierasz z listy. Przychodzisz z jedną sprawą, a wychodzisz z notatką na jedną stronę: co mówisz zarządowi, co robisz i do kiedy."
+cta = "Wybierz swoją sprawę"
+cta2 = "Zobacz przykład notatki"
+fakty = ["60 minut online, w cztery oczy", "Bez nagrywania", "Notatka w ciągu godziny", "1 500 zł netto, faktura VAT"]
+notatka_nad = "Tak kończy się rozmowa. Przykład, sprawa wymyślona"
+notatka_prowadzi = "Taką sprawę prowadzi"
+notatka_przycisk = "Pokaż przykład"
+pauza = "Zatrzymaj"
+wznow = "Wznów przykłady"
+
+[home.sytuacje]
+nad = "Z czym przychodzisz"
+tytul = "Wybierz sprawę, która brzmi **jak Twoja.**"
+lead = "Te sprawy słyszymy od liderów najczęściej. Przy każdej widzisz, co masz po godzinie i z kim rozmawiasz."
+lista_aria = "Sprawy, z którymi przychodzą liderzy"
+wyjdziesz = "Po godzinie masz:"
+z_kim = "Z kim"
+zarezerwuj = "Zarezerwuj godzinę z"
+druga_osoba = "Druga osoba:"
+kolejna_osoba = "Kolejna osoba:"
+nie_ma = "Twojej sprawy nie ma na liście? Napisz jedno zdanie na [piotr.bombol@constans.ai](mailto:piotr.bombol@constans.ai), a podpowiemy, z kim porozmawiać."
+
+[home.eksperci]
+nad = "Eksperci"
+tytul = "Wybierasz osobę **z imienia i nazwiska.**"
+lead = "Każdy profil ma te same części: doświadczenie, liczby, sprawy, z którymi warto przyjść, i kiedy lepiej iść do kogoś innego. Dzięki temu łatwo porównać dwie osoby."
+dolaczanie = "Kolejni eksperci dołączają tylko na zaproszenie. [Jak dołączyć](dla-ekspertow.html)"
+tytul_listy = "Eksperci AI Clinic Hours"
+
+[home.liczby]
+nad = "Kto prowadzi rozmowy"
+tytul = "Doświadczenie **w liczbach.**"
+
+[home.final]
+tytul = "Po godzinie **wiesz, co robisz w tym tygodniu.**"
+tekst = "Wybierz sprawę, osobę i termin. Fakturę dostajesz po rezerwacji."
+cta = "Wybierz osobę"
+
+[jak]
+nad = "Jak to działa"
+tytul = "Pięć kroków **od rezerwacji do notatki.**"
+lead = "Prezentacji nie przygotowujesz. Piszesz jedno zdanie, a ekspert czyta je przed rozmową, razem z plikiem, jeśli go dodasz."
+pasek_rozmowa = "55 minut rozmowy"
+pasek_notatka = "5 minut na notatkę"
+kroki = [
+  { kiedy = "Przy rezerwacji", tytul = "Piszesz jedno zdanie", tekst = "Co chcesz móc powiedzieć albo zrobić po rozmowie, i komu. Na przykład: „W czwartek mówię zarządowi, czy pilotaż idzie dalej”. Możesz dodać plik albo link." },
+  { kiedy = "Po rezerwacji", tytul = "Płacisz fakturę", tekst = "Dostajesz fakturę VAT i płacisz ją przelewem w ciągu doby, najpóźniej dobę przed rozmową. Dzień przed rozmową przychodzi mail z krótką listą do odhaczenia." },
+  { kiedy = "Przed rozmową", tytul = "Ekspert się przygotowuje", tekst = "Czyta Twoje zdanie i plik, jeśli go dodasz. Około 15 minut przygotowania masz w cenie." },
+  { kiedy = "Pierwsze 55 minut", tytul = "Rozmawiacie", tekst = "Online, w Google Meet, tylko Wy dwoje. Rozmowy nie nagrywamy." },
+  { kiedy = "Ostatnie 5 minut", tytul = "Piszecie notatkę", tekst = "Ekspert pisze ją na ekranie, a Ty zgadzasz się na każde zdanie albo je poprawiasz. Gotową notatkę dostajesz w ciągu godziny." },
+]
+
+[cena]
+nad = "Cena"
+tytul = "Jedna cena **za rozmowę z notatką.**"
+lead = "Bez pakietów i abonamentu. Płacisz za jedną rozmowę, a kolejną rezerwujesz tylko wtedy, gdy jej potrzebujesz."
+za_co = "za rozmowę do 60 minut"
+platnosc = [
+  "Faktura VAT na firmę, wysłana do KSeF. Możesz też kupić prywatnie.",
+  "Przelew w ciągu doby od faktury, najpóźniej dobę przed rozmową. Bez płatności zwalniamy termin.",
+  "Bezpłatne przełożenie albo odwołanie do 24 godzin przed rozmową.",
+]
+w_cenie_tytul = "W cenie"
+w_cenie = [
+  "Rozmowa do 60 minut",
+  "Około 15 minut przygotowania eksperta",
+  "Notatka na jedną stronę w ciągu godziny",
+  "Faktura VAT",
+]
+poza_cena_tytul = "Poza ceną"
+poza_cena = [
+  "Praca po rozmowie",
+  "Raporty i wdrożenia",
+  "Kolejna rozmowa, jeśli jej potrzebujesz",
+]
+kazdy_ustala = "Każdy ekspert ustala własną cenę. Widzisz ją przy nazwisku, zanim zarezerwujesz."
+
+[zaufanie]
+nad = "Zanim zarezerwujesz"
+tytul = "Twoja sprawa **zostaje między Wami.**"
+punkty = [
+  { tytul = "Bez nagrywania", tekst = "Rozmów nie nagrywamy. Notatnik AI włączamy tylko wtedy, gdy obie strony się zgodzą." },
+  { tytul = "Notatka tylko dla Ciebie", tekst = "Notatkę dostajesz tylko Ty. Plik, który dodasz, usuwamy 7 dni po rozmowie." },
+  { tytul = "Umowa o poufności", tekst = "Jeśli potrzebujesz NDA, podpiszemy je przed rozmową." },
+  { tytul = "Gdy ekspert odwoła rozmowę", tekst = "Ekspert może odwołać rozmowę tylko w ciągu 24 godzin od rezerwacji i tylko z ważnego powodu, na przykład przy konflikcie interesów. Wtedy zwracamy całą kwotę." },
+]
+
+[faq]
+nad = "Pytania"
+tytul = "Pytania przed rezerwacją."
+pytania = [
+  { pytanie = "Czym to się różni od konsultacji z firmą doradczą?", odpowiedz = "Rozmawiasz przez godzinę z jedną osobą, którą wybierasz, o jednej sprawie. Nie kupujesz projektu ani raportu. Wychodzisz z notatką, którą możesz pokazać dalej." },
+  { pytanie = "Czy to szkolenie?", odpowiedz = "Nie. Na szkoleniu zespół uczy się narzędzi według programu. Tutaj rozmawiasz o swojej sprawie, a jeśli chcesz, robicie razem jedno zadanie z Twojej pracy." },
+  { pytanie = "Czy mogę zapłacić przelewem?", odpowiedz = "Tak. W becie płacisz tylko przelewem, na podstawie faktury, którą dostajesz po rezerwacji. Jeśli płaci księgowość, podaj jej adres e-mail, a fakturę wyślemy od razu tam." },
+  { pytanie = "Co jeśli nie zapłacę na czas?", odpowiedz = "Fakturę płacisz w ciągu doby od jej otrzymania, najpóźniej dobę przed rozmową. Jeśli przelew jest w drodze, wystarczy, że prześlesz potwierdzenie. Bez płatności zwalniamy termin." },
+  { pytanie = "Co jeśli muszę przełożyć rozmowę?", odpowiedz = "Do 24 godzin przed rozmową przekładasz ją albo odwołujesz bezpłatnie. Link znajdziesz w mailu z potwierdzeniem rezerwacji." },
+  { pytanie = "Czy muszę się przygotować?", odpowiedz = "Piszesz jedno zdanie: co chcesz móc powiedzieć albo zrobić po rozmowie, i komu. Możesz dodać plik albo link. Resztę przygotowuje ekspert." },
+  { pytanie = "Czy mogę zarezerwować rozmowę dla kogoś z zarządu?", odpowiedz = "Tak. Przy rezerwacji wpisz imię i e-mail osoby, która będzie rozmawiać, a w danych do faktury swoją firmę. Zaproszenie i notatka trafią do tej osoby." },
+  { pytanie = "Mogę zapytać, zanim zarezerwuję?", odpowiedz = "Tak. Napisz jedno zdanie o swojej sprawie na [piotr.bombol@constans.ai](mailto:piotr.bombol@constans.ai). Podpowiemy, z kim porozmawiać, albo powiemy wprost, że godzina tu nie pomoże." },
+  { pytanie = "Kim są eksperci?", odpowiedz = "To praktycy z wieloletnim doświadczeniem w dużych firmach albo w pracy dla nich. Dołączają tylko na zaproszenie. Na profilu każdej osoby są liczby z jej pracy, sprawy, z którymi warto przyjść, i kiedy lepiej iść do kogoś innego." },
+]
+
+[notatka]
+etykieta = "Notatka po rozmowie"
+zdanie_etykieta = "Twoje zdanie"
+nad = "Co zabierasz"
+tytul = "Notatka, którą **pokażesz zarządowi.**"
+lead = "Ekspert pisze ją na ekranie w ostatnich 5 minutach rozmowy, a Ty zgadzasz się na każde zdanie. Notatka ma zawsze pięć części:"
+link = "Otwórz przykład na osobnej stronie"
+zastrzezenie = "Przykład. Sprawa jest wymyślona."
+
+[notatka.przyklad]
+zdanie = "W czwartek mówię zarządowi, czy pilotaż asystenta AI w obsłudze klienta idzie dalej, i z jakim budżetem."
+punkty = [
+  { naglowek = "Co mówię", tresc = "Pilotaż idzie dalej, ale w węższym zakresie: jeden zespół, jedna kategoria zgłoszeń, osiem tygodni. Budżet proszę tylko na ten etap.", objasnienie = "Jedno, dwa zdania, które powiesz dalej. Twoimi słowami." },
+  { naglowek = "Czego nie twierdzę", tresc = "Że asystent skróci czas obsługi w całej firmie. Z jednego pilotażu tego nie widać.", objasnienie = "Granica, której pilnujesz, żeby nie obiecać za dużo." },
+  { naglowek = "Co robię i do kiedy", tresc = "Do wtorku: trzy miary sukcesu uzgodnione z szefową obsługi. Do środy wieczorem: jedna strona dla zarządu na czwartek.", objasnienie = "Konkretne kroki z datami. Pierwszy w ciągu 7 dni." },
+  { naglowek = "Do IT (jeśli coś blokuje)", tresc = "Pilotaż potrzebuje próbki zgłoszeń bez danych osobowych. Prosimy o zgodę na eksport do 10 listopada. Bez niej węższy etap nie ruszy.", objasnienie = "Jeden akapit, który przekażesz IT: czego potrzebujesz i co to odblokuje." },
+  { naglowek = "Jeśli dalej", tresc = "Po decyzji zarządu: rozmowa o ofercie dostawcy. To osobna rezerwacja.", objasnienie = "Co może być tematem kolejnej rozmowy, jeśli w ogóle jej potrzebujesz." },
+]
+
+[strona_notatki]
+nad = "Przykład"
+h1 = "Przykładowa notatka **po rozmowie.**"
+lead = "Tak wygląda notatka, którą dostajesz w ciągu godziny po rozmowie: jedna strona, którą możesz przesłać dalej."
+dopisek = "W cenie jest rozmowa i ta notatka. Praca po rozmowie i raporty są poza ceną."
+
+[profil]
+jezyki = "Języki"
+branze = "Branże"
+rozmowa = "Rozmowa"
+rozmowa_wartosc = "do 60 minut, Google Meet"
+zarezerwuj = "Zarezerwuj godzinę z"
+zarezerwuj_krotko = "Zarezerwuj"
+przyjdz = "Przyjdź do"
+przyjdz_lead = "Pod każdą sprawą widzisz, co masz po godzinie."
+liczby = "Doświadczenie w liczbach"
+nie_przychodz = "Kiedy lepiej iść **do kogoś innego.**"
+zamiast = "Wtedy lepiej"
+pozostali = "Pozostali eksperci"
+final_tytul = "Zarezerwuj godzinę **z {imie}.**"
+final_tekst = "Termin wybierasz od razu. Fakturę dostajesz po rezerwacji i płacisz ją przelewem przed rozmową."
+warunki = "Faktura VAT, przelew przed rozmową. Termin przełożysz albo odwołasz bezpłatnie do 24 godzin przed rozmową."
+takze = "Bywa też drugą osobą przy sprawach"
+notatka_tytul = "Tak może wyglądać **Twoja notatka.**"
+notatka_lead = "Wymyślony przykład jednej ze spraw powyżej. Prawdziwą notatkę piszecie razem w ostatnich pięciu minutach rozmowy."
+
+[og]
+tytul = "Zespół dostał szkolenie. **Ty dostajesz godzinę.**"
+podpis = "Prywatne rozmowy 1:1 z praktykami AI · notatka na jedną stronę"
+
+[meta]
+usluga_nazwa = "AI Clinic Hours: prywatna rozmowa 1:1 z ekspertem AI (60 minut)"
+usluga_opis = "Płatna, prywatna, 60-minutowa rozmowa online z wybranym praktykiem AI. Cena 1 500 zł netto (1 845 zł brutto). Po rozmowie notatka na jedną stronę: co mówisz zarządowi, czego nie twierdzisz, co robisz i do kiedy."
+usluga_dla = "Zarządy, dyrektorzy i właściciele firm"
+
+[meta.home]
+title = "AI Clinic Hours: godzina z ekspertem AI dla zarządu"
+description = "Prywatna rozmowa 1:1 z wybranym praktykiem AI: 60 minut online i notatka na jedną stronę. Dla zarządów i dyrektorów. 1 500 zł netto, faktura VAT."
+
+[meta.notatka]
+title = "Przykładowa notatka po rozmowie | AI Clinic Hours"
+description = "Zobacz notatkę, z którą wychodzisz po 60 minutach: jedna strona, co mówisz zarządowi, co robisz i do kiedy. Przykład z AI Clinic Hours."
+okruszek = "Przykładowa notatka"
+
+[meta.dla_ekspertow]
+title = "Dołącz jako ekspert | AI Clinic Hours"
+description = "Wdrażasz AI w firmach? Prowadź prywatne rozmowy 1:1 z liderami. Ty ustalasz cenę, my bierzemy na siebie sprzedaż, faktury i rozliczenia."
+okruszek = "Dla ekspertów"
+
+[meta.regulamin]
+title = "Regulamin | AI Clinic Hours"
+description = "Zasady AI Clinic Hours w becie: cena, płatność przelewem po fakturze, bezpłatne przełożenie do 24 godzin przed rozmową, zwrot i poufność."
+okruszek = "Regulamin"
+
+[meta.polityka]
+title = "Polityka prywatności | AI Clinic Hours"
+description = "Jakie dane zbieramy przy rezerwacji rozmowy w AI Clinic Hours, po co, kto je widzi i jak długo je trzymamy. Plik usuwamy 7 dni po rozmowie."
+okruszek = "Polityka prywatności"
+
+[meta.404]
+title = "Nie ma takiej strony | AI Clinic Hours"
+description = "Pod tym adresem nic nie ma. Zacznij od listy spraw, z którymi liderzy przychodzą na rozmowę 1:1, i wybierz osobę, z którą chcesz porozmawiać."
+h1 = "Tej strony **nie ma.**"
+tekst = "Może adres się zmienił. Zacznij od sprawy, z którą przychodzisz."

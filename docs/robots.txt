@@ -1,0 +1,3 @@
+# Zamknięta beta: strona poza wyszukiwarkami. Zmień konfig.indeksowanie w dane/strona.toml.
+User-agent: *
+Disallow: /

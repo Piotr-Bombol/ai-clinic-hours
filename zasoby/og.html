@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pl"><head><meta charset="utf-8">
+<link rel="stylesheet" href="{{css}}">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  .og { position: relative; width: 1200px; height: 630px; background: #0E1730; color: #F8F6F3; display: grid; grid-template-columns: 1fr auto; font-family: 'Inter', sans-serif; }
+  .og::before { content: ""; position: absolute; right: -120px; top: -160px; width: 760px; height: 760px; background: radial-gradient(closest-side, rgba(228,87,46,.32), transparent); }
+  .og-copy { position: relative; padding: 64px 0 56px 72px; display: flex; flex-direction: column; justify-content: space-between; }
+  .og-brand { font-weight: 850; font-size: 30px; letter-spacing: -.03em; }
+  .og-title strong { display: block; }
+  .og-brand em, .og-title em, .og-title strong { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 600; color: #F0764F; }
+  .og-title { font-weight: 850; font-size: 66px; line-height: 1.02; letter-spacing: -.035em; max-width: 640px; }
+  .og-sub { font-size: 25px; color: #A9B1C2; line-height: 1.35; max-width: 620px; }
+  .og-people { position: relative; display: flex; align-items: center; padding-right: 64px; }
+  .og-people img { width: 230px; height: 330px; object-fit: cover; object-position: 50% 25%; border-radius: 22px; box-shadow: 0 24px 60px rgba(0,0,0,.45); }
+  .og-people.n3 img { width: 150px; height: 300px; }
+  .og-people.n3 img + img { margin-left: -30px; }
+  .og-people.n3 img:nth-child(2) { transform: translateY(-26px); }
+  .og-people.n1 img { width: 330px; height: 470px; transform: rotate(2deg); }
+</style></head>
+<body><div class="og">
+  <div class="og-copy">
+    <div class="og-brand">AI Clinic <em>Hours</em></div>
+    <div><div class="og-title">{{tytul}}</div><div class="og-sub" style="margin-top:22px">{{podpis}}</div></div>
+  </div>
+  <div class="og-people n{{liczba}}">{{zdjecia}}</div>
+</div></body></html>
