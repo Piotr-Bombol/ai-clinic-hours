@@ -42,7 +42,7 @@ profil = "Cały profil"
 zarezerwuj = "Zarezerwuj godzinę"
 
 [stopka]
-opis = "AI Clinic Hours prowadzi Constans, kolektyw praktyków AI z Warszawy. Faktury wystawia Constans."
+opis = "AI Clinic Hours prowadzi Constans, kolektyw praktyków AI z Warszawy. Rozmowy sprzedaje i faktury wystawia Codini Digital sp. z o.o. z Krakowa, spółka, która działa pod marką Constans."
 opis_org = "Constans to kolektyw praktyków AI z Warszawy. Prowadzi AI Clinic Hours: płatne, prywatne rozmowy 1:1 liderów firm z wybranymi praktykami AI."
 
 [home]
@@ -99,7 +99,7 @@ kroki = [
   { kiedy = "Przy rezerwacji", tytul = "Piszesz jedno zdanie", tekst = "Co chcesz móc powiedzieć albo zrobić po rozmowie, i komu. Na przykład: „W czwartek mówię zarządowi, czy pilotaż idzie dalej”. Możesz dodać plik albo link." },
   { kiedy = "Po rezerwacji", tytul = "Płacisz fakturę", tekst = "Dostajesz fakturę VAT i płacisz ją przelewem w ciągu doby, najpóźniej dobę przed rozmową. Dzień przed rozmową przychodzi mail z krótką listą do odhaczenia." },
   { kiedy = "Przed rozmową", tytul = "Ekspert się przygotowuje", tekst = "Czyta Twoje zdanie i plik, jeśli go dodasz. Około 15 minut przygotowania masz w cenie." },
-  { kiedy = "Pierwsze 55 minut", tytul = "Rozmawiacie", tekst = "Online, w Google Meet, tylko Wy dwoje. Rozmowy nie nagrywamy." },
+  { kiedy = "Pierwsze 55 minut", tytul = "Rozmawiacie", tekst = "Online, w Google Meet, tylko Wy dwoje. Rozmowy nie nagrywamy, chyba że oboje zgodzicie się na notatnik AI." },
   { kiedy = "Ostatnie 5 minut", tytul = "Piszecie notatkę", tekst = "Ekspert pisze ją na ekranie, a Ty zgadzasz się na każde zdanie albo je poprawiasz. Gotową notatkę dostajesz w ciągu godziny." },
 ]
 
@@ -132,7 +132,7 @@ kazdy_ustala = "Każdy ekspert ustala własną cenę. Widzisz ją przy nazwisku,
 nad = "Zanim zarezerwujesz"
 tytul = "Twoja sprawa **zostaje między Wami.**"
 punkty = [
-  { tytul = "Bez nagrywania", tekst = "Rozmów nie nagrywamy. Notatnik AI włączamy tylko wtedy, gdy obie strony się zgodzą." },
+  { tytul = "Bez nagrywania", tekst = "Rozmów nie nagrywamy. Jedyny wyjątek to notatnik AI, który nagrywa dźwięk: włączamy go tylko wtedy, gdy obie strony się zgodzą." },
   { tytul = "Notatka tylko dla Ciebie", tekst = "Notatkę dostajesz tylko Ty. Plik, który dodasz, usuwamy 7 dni po rozmowie." },
   { tytul = "Umowa o poufności", tekst = "Jeśli potrzebujesz NDA, podpiszemy je przed rozmową." },
   { tytul = "Ekspert może odmówić", tekst = "Jeśli uzna, że ta godzina Ci nie pomoże, albo gdy zachodzi konflikt interesów, odwoła rozmowę w ciągu 24 godzin od rezerwacji. Napisze Ci krótko, dlaczego i do kogo lepiej pójść, a my zwrócimy całą kwotę." },
@@ -224,7 +224,7 @@ okruszek = "Dla ekspertów"
 
 [meta.regulamin]
 title = "Regulamin | AI Clinic Hours"
-description = "Zasady AI Clinic Hours w becie: cena, płatność przelewem po fakturze, bezpłatne przełożenie do 24 godzin przed rozmową, zwrot i poufność."
+description = "Regulamin AI Clinic Hours: co kupujesz, cena i płatność, przełożenie i zwrot, prawa konsumenta, poufność, prawa do notatki i reklamacje."
 okruszek = "Regulamin"
 
 [meta.polityka]
