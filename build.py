@@ -49,6 +49,8 @@ EXP = sorted(
     key=lambda x: (x.get("kolejnosc", 99), x["nazwisko"]),
 )
 BY_SLUG = {x["slug"]: x for x in EXP}
+# First names shared by several experts (e.g. two Piotrs): buttons on shared pages use the full name
+SHARED_FIRST = {n for n in (x["imie"] for x in EXP) if sum(1 for y in EXP if y["imie"] == n) > 1}
 OBSZARY = S["obszary"]
 L = S["etykiety"]
 
@@ -430,7 +432,7 @@ def home():
   <div class="who">
     <a class="who-main" href="{main_x['slug']}.html">{picture(main_x, [300], "72px", "who-face", alt="")}
       <span><span class="who-k">{e(SX['z_kim'])}</span><b>{e(name(main_x))}</b><small>{md(kto[0].get('dlaczego', ''))}</small></span></a>
-    {book_btn(main_x, SX['zarezerwuj'] + ' ' + main_x['narzednik_imie'])}
+    {book_btn(main_x, SX['zarezerwuj'] + ' ' + main_x['narzednik' if main_x['imie'] in SHARED_FIRST else 'narzednik_imie'])}
   </div>
   {alt}
 </section>"""
