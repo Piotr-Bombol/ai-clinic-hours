@@ -1,11 +1,12 @@
 # Sytuacje, z którymi lider przychodzi na rozmowę.
 # Każda sytuacja jest prawdziwa: wzór powtarza się w rozmowach z klientami Constans
 # (źródła w polu "zrodlo", nie trafiają na stronę). Na stronie nie ma nazw firm ani cytatów z nagrań.
+# Liczby i nazwy narzędzi w cytatach są przykładowe: mają sprawić, że sytuacja brzmi konkretnie. Wzór pochodzi ze źródeł.
 #
 # Pola:
 #   id          krótki identyfikator (litery, cyfry, myślniki), używany w linkach
 #   etykieta    2-4 słowa na chipie i nad cytatem
-#   cytat       pierwsza osoba, tak jak lider powiedziałby to przy kawie
+#   cytat       pierwsza osoba, tak jak lider powiedziałby to przy kawie; bez form zdradzających płeć
 #   obszar      strategia | technologia | adopcja
 #   wyjdziesz   2-4 rzeczy, które realnie mieszczą się w notatce po 60 minutach
 #   notatka     (opcjonalnie) przykładowa notatka: pięć punktów; pierwsze trzy sytuacje z notatką idą do animacji w hero
@@ -14,18 +15,18 @@
 [[sytuacja]]
 id = "pilotaz"
 etykieta = "Pilotaż przed zarządem"
-cytat = "W czwartek mam zarząd i muszę powiedzieć, czy pilotaż idzie dalej. Wyniki są mieszane, więc najpierw chcę to po cichu przegadać z kimś z zewnątrz."
+cytat = "Testujemy asystenta AI w obsłudze klienta. Połowa konsultantów go chwali, połowa wyłączyła. W czwartek zarząd pyta, czy idziemy dalej, a ja nie chcę przyjść z «to zależy»."
 obszar = "strategia"
 wyjdziesz = [
-  "Zdanie dla zarządu na czwartek: czy pilotaż idzie dalej i w jakim zakresie.",
-  "Listę tego, czego jeszcze nie obiecujesz, bo z jednego pilotażu tego nie widać.",
+  "Odpowiedź na czwartek: czy pilotaż idzie dalej, w jakim zakresie i za jaki budżet.",
+  "Dwa pytania do konsultantów, którzy wyłączyli asystenta, zadane jeszcze przed zarządem.",
   "Trzy miary sukcesu następnego etapu i datę, kiedy je sprawdzisz.",
 ]
 zrodlo = "grit-client-voice.md:23-24, 71-74, 97-98; grit-xtb-sessions-a.md:107"
 notatka = [
   { naglowek = "Co mówię", tresc = "Pilotaż idzie dalej, ale w węższym zakresie: jeden zespół, jedna kategoria zgłoszeń, osiem tygodni. Budżet proszę tylko na ten etap." },
   { naglowek = "Czego nie twierdzę", tresc = "Że asystent skróci czas obsługi w całej firmie. Z jednego pilotażu tego nie widać." },
-  { naglowek = "Co robię i do kiedy", tresc = "Do wtorku: trzy miary sukcesu uzgodnione z szefową obsługi. Do środy wieczorem: jedna strona dla zarządu na czwartek." },
+  { naglowek = "Co robię i do kiedy", tresc = "Do wtorku: trzy miary sukcesu uzgodnione z szefową obsługi i rozmowa z dwoma konsultantami, którzy wyłączyli asystenta. Do środy wieczorem: jedna strona dla zarządu." },
   { naglowek = "Do IT", tresc = "Potrzebujemy próbki zgłoszeń bez danych osobowych. Prosimy o zgodę na eksport do 10 listopada." },
   { naglowek = "Jeśli dalej", tresc = "Po decyzji zarządu: rozmowa o ofercie dostawcy. To osobna rezerwacja." },
 ]
@@ -38,21 +39,21 @@ kiedy = "gdy pilotaż utknął na danych albo na systemach."
 
 [[sytuacja]]
 id = "licencje"
-etykieta = "Licencje bez użytkowników"
-cytat = "Kupiliśmy licencje na asystenta AI dla całego działu. Po kilku miesiącach używa go garstka osób, a w poniedziałek szef zapytał, co z tym robimy."
+etykieta = "Licencje, których nikt nie używa"
+cytat = "Kupiliśmy Copilota dla 150 osób w sprzedaży. Po pół roku regularnie używa go może dwadzieścia. W styczniu odnawiamy licencje, a szef już pyta, czy płacimy dalej."
 obszar = "adopcja"
 wyjdziesz = [
-  "Zdanie dla szefa: co sprawdzacie, do kiedy i czego jeszcze nie obiecujesz.",
-  "Trzy możliwe powody, dla których ludzie nie korzystają, do sprawdzenia w tym tygodniu.",
-  "Jedną zmianę w tygodniu pracy zespołu i osobę, która jej pilnuje.",
+  "Odpowiedź dla szefa: co sprawdzacie do stycznia i ile licencji może zostać.",
+  "Trzy możliwe powody, dla których handlowcy nie korzystają, do sprawdzenia w tym tygodniu.",
+  "Jedną zmianę w tym, jak sprzedaż pracuje na co dzień, i osobę, która jej pilnuje.",
 ]
 zrodlo = "grit-client-voice.md:33-34, 39-40, 116-117, 136"
 notatka = [
-  { naglowek = "Co mówię", tresc = "Licencje zostają do końca kwartału. Przez sześć tygodni sprawdzamy, co blokuje ludzi: nawyk, brak czasu czy samo narzędzie." },
-  { naglowek = "Czego nie twierdzę", tresc = "Że po sześciu tygodniach korzystać będzie cały dział. Obiecuję tylko odpowiedź, co blokuje." },
-  { naglowek = "Co robię i do kiedy", tresc = "W poniedziałek na odprawie: dwie osoby pokazują, do czego same używają asystenta. Od piątku raport tygodniowy robimy z AI." },
+  { naglowek = "Co mówię", tresc = "Do odnowienia w styczniu nic nie zmieniamy. Przez sześć tygodni sprawdzamy, co blokuje ludzi: nawyk, brak czasu czy samo narzędzie." },
+  { naglowek = "Czego nie twierdzę", tresc = "Że w styczniu z Copilota będzie korzystać cała sprzedaż. Obiecuję odpowiedź, co blokuje i ile licencji naprawdę potrzebujemy." },
+  { naglowek = "Co robię i do kiedy", tresc = "W poniedziałek na odprawie dwóch handlowców pokazuje, jak przygotowują ofertę z Copilotem. Od piątku raport tygodniowy robimy z AI." },
   { naglowek = "Do IT", tresc = "Prosimy o raport użycia licencji z ostatnich 90 dni, do piątku. Bez niego nie wiemy, od kogo zacząć." },
-  { naglowek = "Jeśli dalej", tresc = "Za sześć tygodni, jeśli trzeba: kolejna rozmowa o wynikach i o tym, czy przedłużać licencje." },
+  { naglowek = "Jeśli dalej", tresc = "Przed odnowieniem: kolejna rozmowa o wynikach i o tym, ile licencji przedłużyć." },
 ]
 [[sytuacja.kto]]
 ekspert = "bartek-lechowski"
@@ -64,17 +65,17 @@ kiedy = "gdy najpierw musisz odpowiedzieć szefowi, co dalej z licencjami."
 [[sytuacja]]
 id = "oferta"
 etykieta = "Oferta dostawcy"
-cytat = "Dostawca przysłał ofertę i prezentację, która wygląda świetnie. W piątek mam powiedzieć, czy podpisujemy, a nie umiem odróżnić tego, co działa, od tego, co ładnie wygląda na slajdach."
+cytat = "Dostawca pokazał demo: AI czyta umowę i w minutę wskazuje ryzykowne zapisy. Chcą podpisu na dwa lata, a ja nie wiem, jak sprawdzić, czy zadziała na naszych umowach."
 obszar = "technologia"
 wyjdziesz = [
-  "Trzy pytania do dostawcy: o dane, o koszt utrzymania i o próbę na Waszych dokumentach.",
-  "Stanowisko na piątek: kupić na próbę jedną część oferty czy poczekać, i dlaczego.",
-  "Pytania do IT o to, gdzie dostawca będzie trzymał Wasze dane.",
+  "Trzy pytania do dostawcy: o Wasze dane, o koszt utrzymania i o próbę na Waszych umowach.",
+  "Stanowisko na rozmowę z dostawcą: krótka próba, podpis czy rezygnacja, i dlaczego.",
+  "Pytania do IT o to, gdzie dostawca będzie trzymał Wasze dokumenty.",
 ]
 zrodlo = "grit-client-voice.md:33-34, 81-82, 137; panel/PER-5.md"
 notatka = [
-  { naglowek = "Co mówię", tresc = "Kupujemy na trzy miesiące tylko analizę umów, z prawem wyjścia. Całej platformy na razie nie bierzemy." },
-  { naglowek = "Czego nie twierdzę", tresc = "Że wynik z prezentacji powtórzy się na naszych umowach. Dostawca jeszcze tego nie pokazał." },
+  { naglowek = "Co mówię", tresc = "Kupujemy na trzy miesiące tylko analizę umów, z prawem wyjścia. Na dwa lata nie podpisujemy." },
+  { naglowek = "Czego nie twierdzę", tresc = "Że wynik z demo powtórzy się na naszych umowach. Dostawca jeszcze tego nie pokazał." },
   { naglowek = "Co robię i do kiedy", tresc = "Jutro wysyłam dostawcy trzy pytania. Podpis dopiero po odpowiedziach. Do końca miesiąca: próba na 200 naszych umowach." },
   { naglowek = "Do IT", tresc = "Sprawdźcie, gdzie dostawca trzyma dane i czy podpisze umowę powierzenia. Potrzebuję odpowiedzi przed próbą." },
   { naglowek = "Jeśli dalej", tresc = "Po próbie: rozmowa o wynikach i warunkach umowy. To osobna rezerwacja." },
@@ -89,12 +90,12 @@ kiedy = "gdy na stole leży kilka ofert i każda obiecuje co innego."
 [[sytuacja]]
 id = "zostajemy-w-tyle"
 etykieta = "Zostajemy w tyle?"
-cytat = "Na każdej konferencji słyszę, że inni mają już AI w całej firmie. Mam wrażenie, że zostajemy w tyle, a nie chcę o to pytać własnych ludzi, bo to ode mnie oczekują odpowiedzi."
+cytat = "Konkurencja chwali się na LinkedInie, że ma AI w całej firmie. U nas kilka osób używa ChatGPT na własną rękę i na tym koniec. Nie wiem, czy naprawdę zostajemy w tyle, czy oni po prostu lepiej o tym opowiadają."
 obszar = "strategia"
 wyjdziesz = [
-  "Trzy pytania do zespołu, z których dowiesz się, gdzie naprawdę jesteście.",
-  "Jedną rzecz, którą zaczynacie w tym miesiącu, i jedną, którą możecie pominąć, choć wszyscy o niej mówią.",
-  "Pierwsze zdanie na rozmowę o AI z zarządem, w którym nie musisz udawać, że znasz wszystkie odpowiedzi.",
+  "Ocenę wprost, gdzie jesteście w porównaniu z firmami podobnej wielkości.",
+  "Trzy pytania do zespołu, z których dowiesz się, kto i do czego już używa AI.",
+  "Pierwszy krok na ten miesiąc i jedną rzecz, którą możecie spokojnie pominąć.",
 ]
 zrodlo = "walidacja-2026-10-28-b 07:28-07:55, 25:33-25:42; walidacja-2026-10-28-a 07:50-08:16"
 [[sytuacja.kto]]
@@ -107,12 +108,12 @@ kiedy = "gdy pierwszy krok ma zrobić cały zespół, nie tylko Ty."
 [[sytuacja]]
 id = "budzet"
 etykieta = "Budżet na AI"
-cytat = "W grudniu zarząd zatwierdza budżet. Mam przyjść z kwotą na AI na przyszły rok i ją obronić, a oni nie lubią niespodzianek."
+cytat = "Do 10 grudnia muszę wpisać do budżetu kwotę na AI na przyszły rok. Ma to być 50 tysięcy czy pół miliona? Zarząd i tak zapyta, na co dokładnie idą te pieniądze."
 obszar = "strategia"
 wyjdziesz = [
-  "Zdanie dla zarządu: od jakiej kwoty zaczynacie i pod jakim warunkiem wydajecie więcej.",
-  "Listę tego, co zostaje poza budżetem, z powodem przy każdej pozycji.",
-  "Krok na styczeń i warunek, przy którym przestajecie wydawać.",
+  "Kwotę na start i warunek, przy którym wydajecie więcej.",
+  "Podział kwoty na licencje, projekty i czas ludzi, z powodem przy każdej pozycji.",
+  "Pierwszy krok na styczeń i moment, w którym przestajecie wydawać, jeśli nie działa.",
 ]
 zrodlo = "grit-client-voice.md:55-56, 59-60, 87-88, 93-94, 133"
 [[sytuacja.kto]]
@@ -124,15 +125,15 @@ kiedy = "gdy kwota zależy od tego, czy zespoły zaczną pracować z AI."
 
 [[sytuacja]]
 id = "koszty-bez-efektow"
-etykieta = "Koszty AI bez efektów"
-cytat = "Od dwóch lat płacimy za AI i widzę to tylko w kosztach. Zespoły raportują, ile osób korzysta z narzędzi, a ja mam pokazać zarządowi, co z tego mamy."
+etykieta = "Zwrot z AI?"
+cytat = "Odpowiadam za finanse firmy i widzę AI tylko w kosztach. Od dwóch lat płacimy za licencje i projekty. Zespoły raportują, ile osób się loguje, a zarząd pyta mnie, co z tego mamy."
 obszar = "strategia"
 wyjdziesz = [
-  "Dwie miary efektu, które zastąpią w raporcie dla zarządu liczbę aktywnych użytkowników.",
-  "Zdanie dla zarządu: gdzie AI już się zwraca, gdzie jeszcze tego nie wiecie i do kiedy to sprawdzicie.",
-  "Listę wydatków na AI do przejrzenia: co zostaje, a co wstrzymujecie do pierwszego pomiaru.",
+  "Dwie miary efektu, które w raporcie dla zarządu zastąpią liczbę zalogowanych osób.",
+  "Odpowiedź dla zarządu: gdzie AI już się zwraca, gdzie jeszcze tego nie wiecie i do kiedy to sprawdzicie.",
+  "Listę wydatków na AI: co zostaje, a co wstrzymujecie do pierwszego pomiaru.",
 ]
-zrodlo = "walidacja-2026-10-28-b 27:27-28:33, 29:29-29:42; walidacja-2026-10-28-b 21:11-21:57 (efekt zamiast wysiłku)"
+zrodlo = "walidacja-2026-10-28-b 27:27-28:33, 29:29-29:42; walidacja-2026-10-28-b 21:11-21:57 (efekt zamiast wysiłku); status-2026-10-29 09:56-10:26 (CFO)"
 [[sytuacja.kto]]
 ekspert = "piotr-bombol"
 dlaczego = "W Constans odpowiada za strategię i diagnozę: sprawdza, gdzie AI daje firmie efekt, a gdzie tylko kosztuje."
@@ -141,14 +142,32 @@ ekspert = "bartek-lechowski"
 kiedy = "gdy efekt zależy od tego, czy zespoły naprawdę zmienią sposób pracy."
 
 [[sytuacja]]
+id = "reczna-robota"
+etykieta = "Ręczna robota w Excelu"
+cytat = "Mój zespół co miesiąc spędza dwa dni na uzgadnianiu wyciągów bankowych z księgowaniem. Wszystko ręcznie, w Excelu. Słyszę, że AI to zrobi. Tylko czy to zadanie dla czatu, dla formuły, czy dla IT?"
+obszar = "technologia"
+wyjdziesz = [
+  "Odpowiedź, czym to zrobić: formułą, skryptem w arkuszu czy osobnym narzędziem, i dlaczego.",
+  "Szkic rozwiązania na próbce z jednego miesiąca, który zespół porówna z ręcznym wynikiem.",
+  "Listę tego, czego potrzebujecie od IT: eksportów, dostępów i zgód.",
+]
+zrodlo = "grit-xtb-sessions-a.md:25, 30; status-2026-10-29 09:56-10:26 (CFO)"
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+dlaczego = "Od października 2026 prowadzi program AI dla działu finansów dużej firmy. Zespoły budują w nim narzędzia do uzgodnień i raportów w arkuszach."
+[[sytuacja.kto]]
+ekspert = "tomasz-kerber"
+kiedy = "gdy dane trzeba pobierać prosto z systemu księgowego albo z banku."
+
+[[sytuacja]]
 id = "zespol-sie-boi"
 etykieta = "Zespół się boi"
-cytat = "W środę mam spotkanie z zespołem o AI. Część ludzi się boi, a jedna osoba otwarcie mówi, że to bez sensu, i reszta zaczyna jej słuchać."
+cytat = "W moim zespole mało kto lubi nowe narzędzia. Na hasło AI połowa pyta, czy ich zastąpi, a najbardziej doświadczona osoba mówi głośno, że to strata czasu. Reszta patrzy, co zrobi ona."
 obszar = "adopcja"
 wyjdziesz = [
-  "Pierwsze pięć zdań na spotkanie z zespołem: co mówisz o obawach, a czego nie obiecujesz.",
-  "Plan rozmowy w cztery oczy z osobą, która jest przeciw.",
-  "Imię osoby z zespołu, która pokaże pierwszy przykład, i datę.",
+  "Pięć pierwszych zdań na spotkanie z zespołem, razem z odpowiedzią na pytanie, czy AI kogoś zastąpi.",
+  "Plan rozmowy w cztery oczy z osobą, która mówi, że to strata czasu.",
+  "Pierwsze zadanie, na którym zespół spróbuje AI, i osobę, która pokaże je jako pierwsza.",
 ]
 zrodlo = "grit-client-voice.md:75-76, 116-117; grit-xtb-sessions-b.md:75, 78"
 [[sytuacja.kto]]
@@ -161,12 +180,12 @@ kiedy = "gdy na spotkaniu chcesz pokazać, jak Ty pracujesz z AI."
 [[sytuacja]]
 id = "it-blokuje"
 etykieta = "IT blokuje"
-cytat = "Zespół od miesiąca czeka na zgodę IT na narzędzie AI i dostęp do danych. Nie wiem, jak z nimi rozmawiać, żeby znowu nie odbić się od ściany."
+cytat = "ChatGPT mamy w firmie zablokowany, a ludzie i tak używają go na prywatnych telefonach. Od sześciu tygodni czekamy, aż IT zatwierdzi jakiekolwiek narzędzie. Każdy mail do nich wraca z kolejnym pytaniem."
 obszar = "technologia"
 wyjdziesz = [
-  "Akapit do IT: jakie narzędzie, po co, jakie dane i czego nie potrzebujesz.",
+  "Jeden akapit do IT: jakie narzędzie, po co, jakie dane i czego nie potrzebujecie.",
   "Wariant na start w narzędziach, które IT już zatwierdziło.",
-  "Nazwisko osoby, która to zatwierdza, i termin, do którego prosisz o odpowiedź.",
+  "Zasadę na teraz dla osób, które używają AI na prywatnych telefonach.",
 ]
 zrodlo = "grit-xtb-sessions-b.md:60, 114; grit-xtb-sessions-a.md:50, 54; panel/PER-2.md"
 [[sytuacja.kto]]
@@ -179,11 +198,11 @@ kiedy = "gdy zgodę musi dać ktoś z zarządu."
 [[sytuacja]]
 id = "rachunek-za-ai"
 etykieta = "Rachunek za AI rośnie"
-cytat = "W zeszłym miesiącu rachunek za AI był prawie dwa razy wyższy, niż zakładaliśmy. Nikt nie umie powiedzieć, kto tyle zużył, a dostawca namawia nas na roczny kontrakt."
+cytat = "Zakładaliśmy 8 tysięcy miesięcznie za AI. Przyszła faktura na 15 tysięcy i nikt nie umie powiedzieć, kto tyle zużył. Dostawca proponuje roczny kontrakt, bo «wyjdzie taniej»."
 obszar = "technologia"
 wyjdziesz = [
-  "Trzy ustawienia, które ograniczą koszt jeszcze w tym miesiącu, na przykład limity na osobę i alerty budżetowe.",
-  "Stanowisko w sprawie rocznego kontraktu: podpisać, negocjować czy zostać przy płaceniu za zużycie.",
+  "Trzy ustawienia, które jeszcze w tym miesiącu ograniczą koszt, na przykład limity na osobę i alerty budżetowe.",
+  "Stanowisko w sprawie rocznego kontraktu: podpisać, negocjować czy dalej płacić za zużycie.",
   "Pytania do IT o to, kto i do czego używa najdroższych modeli.",
 ]
 zrodlo = "walidacja-2026-10-28-b 28:54-29:24"
@@ -196,8 +215,8 @@ kiedy = "gdy o kontrakcie decyduje zarząd i potrzebujesz zdania na posiedzenie.
 
 [[sytuacja]]
 id = "wlasna-praca"
-etykieta = "Własna praca z AI"
-cytat = "Mój dzień to spotkania i poczta. Chcę, żeby AI co rano układało mi listę zadań z maili i kalendarza, ale na kurs nie mam czasu."
+etykieta = "Mój dzień z AI"
+cytat = "Mój zespół już korzysta z AI, a ja nie bardzo. Mój dzień to spotkania i poczta, na kurs nie mam czasu. Chcę chociaż, żeby AI co rano robiło mi listę spraw z maili i kalendarza."
 obszar = "strategia"
 wyjdziesz = [
   "Jedno zadanie z Twojego dnia, zrobione razem na ekranie podczas rozmowy.",
@@ -215,12 +234,12 @@ kiedy = "gdy chcesz, żeby razem z Tobą zaczął cały zespół."
 [[sytuacja]]
 id = "drugie-podejscie"
 etykieta = "Drugie podejście do AI"
-cytat = "Rok temu wydaliśmy pieniądze na projekt AI i nic z tego nie wyszło. Teraz zarząd chce spróbować jeszcze raz, a ludzie na samo hasło AI przewracają oczami."
+cytat = "Rok temu zapłaciliśmy za AI do prognoz sprzedaży. Handlowcy nie ufali jego liczbom i po pół roku wrócili do Excela. Teraz zarząd chce drugiego podejścia, a ludzie na hasło AI przewracają oczami."
 obszar = "adopcja"
 wyjdziesz = [
   "Trzy możliwe przyczyny, dla których za pierwszym razem nie wyszło, do sprawdzenia u Was.",
-  "Zdanie dla zarządu o drugim podejściu i listę tego, czego nie obiecujesz.",
-  "Pierwszy mały krok z datą i kryterium, po którym poznacie, że nie działa.",
+  "Co powiedzieć zarządowi o drugim podejściu, żeby nie obiecać tego samego co rok temu.",
+  "Pierwszy mały krok z datą i sygnałem, po którym poznacie, że nie działa.",
 ]
 zrodlo = "src-natalia-cwik-2026-08-10.md:44-46; out/buyer-narrative.md:11"
 [[sytuacja.kto]]
@@ -233,7 +252,7 @@ kiedy = "gdy najpierw musisz wytłumaczyć zarządowi, co poszło nie tak."
 [[sytuacja]]
 id = "za-wczesnie"
 etykieta = "Za wcześnie na AI?"
-cytat = "Wdrażamy nowy CRM, a dokumenty i tak trafiają na papierze do biura rachunkowego. Chcę od razu dołożyć AI, które samo je przeczyta i roześle dalej, bo wszyscy mówią, że się da."
+cytat = "Właśnie wdrażamy nowy CRM, a dokumenty i tak wozimy na papierze do biura rachunkowego. Chcę od razu dołożyć AI, które je przeczyta i roześle dalej, bo wszyscy mówią, że się da."
 obszar = "technologia"
 wyjdziesz = [
   "Odpowiedź wprost: AI teraz czy dopiero po wdrożeniu CRM, i dlaczego.",
@@ -250,13 +269,12 @@ kiedy = "gdy zespół jest zmęczony wdrożeniem CRM i nie chce słyszeć o kole
 
 [[sytuacja]]
 id = "kupic-czy-zbudowac"
-etykieta = "Kupić, zbudować czy czekać"
-cytat = "Dostawca ma gotowe narzędzie, a nasze IT twierdzi, że zbuduje to taniej samo. Do końca miesiąca mam zdecydować, a nie umiem sprawdzić, kto ma rację."
+etykieta = "Kupić czy zbudować"
+cytat = "Chcemy, żeby AI odpowiadało klientom na czacie na stronie. Dostawca ma gotowe narzędzie za 6 tysięcy miesięcznie, a nasze IT twierdzi, że zrobi to samo w dwa miesiące. Decyzja do końca miesiąca, a obie strony brzmią przekonująco."
 obszar = "technologia"
 wyjdziesz = [
   "Trzy pytania, które zadasz dostawcy i swojemu IT, zanim zdecydujesz.",
-  "Kryteria, po których porównasz oba warianty, i datę decyzji.",
-  "Listę kosztów utrzymania, o które trzeba zapytać, zanim cokolwiek podpiszesz.",
+  "Porównanie obu wariantów na jednej stronie: koszt po dwóch latach, czas do startu i kto to utrzymuje.",
 ]
 zrodlo = "grit-xtb-sessions-a.md:31, 45, 110; grit-xtb-sessions-b.md:122"
 [[sytuacja.kto]]
