@@ -185,7 +185,7 @@ def footer(prefix):
       <a href="{prefix}dla-ekspertow.html">{e(L['nav_dla_ekspertow'])}</a>
       <a href="{prefix}przykladowa-notatka.html">{e(L['nav_notatka'])}</a>
       <a href="{prefix}regulamin.html">Regulamin</a>
-      <a href="{prefix}polityka-prywatnosci.html">Polityka prywatności</a>
+      <a href="{prefix}polityka-prywatnosci.html">Polityka prywatności i cookies</a>
     </nav>
   </div>
   <div class="wrap footer-base"><p>{e(K['wersja'])}</p></div>

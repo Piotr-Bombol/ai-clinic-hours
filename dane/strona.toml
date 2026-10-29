@@ -228,9 +228,9 @@ description = "Zasady AI Clinic Hours w becie: cena, płatność przelewem po fa
 okruszek = "Regulamin"
 
 [meta.polityka]
-title = "Polityka prywatności | AI Clinic Hours"
-description = "Jakie dane zbieramy przy rezerwacji rozmowy w AI Clinic Hours, po co, kto je widzi i jak długo je trzymamy. Plik usuwamy 7 dni po rozmowie."
-okruszek = "Polityka prywatności"
+title = "Polityka prywatności i cookies | AI Clinic Hours"
+description = "Jakie dane zbieramy przy rezerwacji rozmowy w AI Clinic Hours, po co, kto je widzi i jak długo je trzymamy. Bez cookies i bez analityki."
+okruszek = "Polityka prywatności i cookies"
 
 [meta.404]
 title = "Nie ma takiej strony | AI Clinic Hours"
