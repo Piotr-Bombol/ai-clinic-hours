@@ -318,6 +318,14 @@ h3 { font-size: 20px; line-height: 1.3; font-weight: 750; letter-spacing: -.01em
 .panel-in { animation: panelin .35s var(--ease) both; }
 @keyframes panelin { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .panel-in { animation: none; } }
+.sit-filter { display: none; }
+.js .sit-filter { display: flex; flex-wrap: wrap; gap: 8px; margin: -20px 0 26px; }
+.chip-n { font-weight: 600; opacity: .6; margin-left: 3px; font-variant-numeric: tabular-nums; }
+.sit-tab[hidden] { display: none; }
+@media (min-width: 901px) {
+  /* Long lists stay scannable: unselected quotes show two lines, the panel shows the full quote */
+  .js .sit-tab:not([aria-selected="true"]) .sit-quote { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+}
 
 @media (max-width: 900px) {
   .explorer { grid-template-columns: minmax(0, 1fr); }

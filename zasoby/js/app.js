@@ -49,18 +49,42 @@
     tabs.forEach(function (t, i) {
       t.addEventListener('click', function () { select(i, false); });
       t.addEventListener('keydown', function (ev) {
-        var n = tabs.length, j = null;
-        if (ev.key === 'ArrowDown' || ev.key === 'ArrowRight') j = (i + 1) % n;
-        else if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') j = (i - 1 + n) % n;
+        // Arrow keys move between the tabs the topic filter leaves visible
+        var vis = tabs.filter(function (x) { return !x.hidden; });
+        var n = vis.length, k = vis.indexOf(t), j = null;
+        if (ev.key === 'ArrowDown' || ev.key === 'ArrowRight') j = (k + 1) % n;
+        else if (ev.key === 'ArrowUp' || ev.key === 'ArrowLeft') j = (k - 1 + n) % n;
         else if (ev.key === 'Home') j = 0;
         else if (ev.key === 'End') j = n - 1;
-        if (j !== null) { ev.preventDefault(); select(j, true); }
+        if (j !== null) { ev.preventDefault(); select(tabs.indexOf(vis[j]), true); }
       });
     });
     panels.forEach(function (p, j) { p.hidden = j !== 0; });
+
+    /* Topic filter above the situation list */
+    var sf = d.querySelector('.sit-filter');
+    var filterSituations = function (f) {
+      if (!sf) return;
+      [].forEach.call(sf.querySelectorAll('[data-sit-filter]'), function (x) {
+        x.setAttribute('aria-pressed', x.getAttribute('data-sit-filter') === f ? 'true' : 'false');
+      });
+      tabs.forEach(function (t) { t.hidden = !!f && t.getAttribute('data-obszar') !== f; });
+      var cur = tabs.filter(function (t) { return t.getAttribute('aria-selected') === 'true'; })[0];
+      if (cur && cur.hidden) {
+        var first = tabs.filter(function (t) { return !t.hidden; })[0];
+        if (first) select(tabs.indexOf(first), false);
+      }
+    };
+    if (sf) {
+      sf.addEventListener('click', function (ev) {
+        var b = ev.target.closest('[data-sit-filter]');
+        if (b) filterSituations(b.getAttribute('data-sit-filter'));
+      });
+    }
     openSituation = function (id) {
       for (var i = 0; i < tabs.length; i++) {
         if (tabs[i].id === 'tab-' + id) {
+          if (tabs[i].hidden) filterSituations('');
           select(i, false);
           var sec = d.getElementById('sytuacje') || ex;
           sec.scrollIntoView({ behavior: smooth, block: 'start' });

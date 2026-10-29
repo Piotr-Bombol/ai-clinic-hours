@@ -12,6 +12,7 @@ organizacja = "Constans"
 cena_netto = 1500
 vat = 0.23
 filtry_od = 6
+filtry_sytuacji_od = 10
 wersja = "Wersja beta, październik 2026"
 
 [obszary.strategia]
@@ -63,6 +64,8 @@ nad = "Z czym przychodzisz"
 tytul = "Wybierz sprawę, która brzmi **jak Twoja.**"
 lead = "Te sprawy słyszymy od liderów najczęściej. Przy każdej widzisz, co masz po godzinie i z kim rozmawiasz."
 lista_aria = "Sprawy, z którymi przychodzą liderzy"
+filtr_aria = "Pokaż sprawy z obszaru"
+filtr_wszystkie = "Wszystkie"
 wyjdziesz = "Po godzinie masz:"
 z_kim = "Z kim"
 zarezerwuj = "Zarezerwuj godzinę z"
@@ -132,14 +135,15 @@ punkty = [
   { tytul = "Bez nagrywania", tekst = "Rozmów nie nagrywamy. Notatnik AI włączamy tylko wtedy, gdy obie strony się zgodzą." },
   { tytul = "Notatka tylko dla Ciebie", tekst = "Notatkę dostajesz tylko Ty. Plik, który dodasz, usuwamy 7 dni po rozmowie." },
   { tytul = "Umowa o poufności", tekst = "Jeśli potrzebujesz NDA, podpiszemy je przed rozmową." },
-  { tytul = "Gdy ekspert odwoła rozmowę", tekst = "Ekspert może odwołać rozmowę tylko w ciągu 24 godzin od rezerwacji i tylko z ważnego powodu, na przykład przy konflikcie interesów. Wtedy zwracamy całą kwotę." },
+  { tytul = "Ekspert może odmówić", tekst = "Jeśli uzna, że ta godzina Ci nie pomoże, albo gdy zachodzi konflikt interesów, odwoła rozmowę w ciągu 24 godzin od rezerwacji. Napisze Ci krótko, dlaczego i do kogo lepiej pójść, a my zwrócimy całą kwotę." },
 ]
 
 [faq]
 nad = "Pytania"
 tytul = "Pytania przed rezerwacją."
 pytania = [
-  { pytanie = "Czym to się różni od konsultacji z firmą doradczą?", odpowiedz = "Rozmawiasz przez godzinę z jedną osobą, którą wybierasz, o jednej sprawie. Nie kupujesz projektu ani raportu. Wychodzisz z notatką, którą możesz pokazać dalej." },
+  { pytanie = "Czym to się różni od konsultacji z firmą doradczą?", odpowiedz = "Rozmawiasz przez godzinę z jedną osobą, którą wybierasz, o jednej sprawie. Nikt nie podmieni jej na kogoś z mniejszym doświadczeniem. Nie kupujesz projektu ani raportu. Wychodzisz z notatką, którą możesz pokazać dalej." },
+  { pytanie = "Czy ekspert będzie mi coś sprzedawał?", odpowiedz = "Nie w trakcie rozmowy. Godzina jest o Twojej sprawie. Jeśli potrzebujesz czegoś więcej, ekspert zapisze to w notatce w części „Jeśli dalej”, a decyzja zostaje po Twojej stronie." },
   { pytanie = "Czy to szkolenie?", odpowiedz = "Nie. Na szkoleniu zespół uczy się narzędzi według programu. Tutaj rozmawiasz o swojej sprawie, a jeśli chcesz, robicie razem jedno zadanie z Twojej pracy." },
   { pytanie = "Czy mogę zapłacić przelewem?", odpowiedz = "Tak. W becie płacisz tylko przelewem, na podstawie faktury, którą dostajesz po rezerwacji. Jeśli płaci księgowość, podaj jej adres e-mail, a fakturę wyślemy od razu tam." },
   { pytanie = "Co jeśli nie zapłacę na czas?", odpowiedz = "Fakturę płacisz w ciągu doby od jej otrzymania, najpóźniej dobę przed rozmową. Jeśli przelew jest w drodze, wystarczy, że prześlesz potwierdzenie. Bez płatności zwalniamy termin." },

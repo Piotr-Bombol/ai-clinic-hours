@@ -87,6 +87,24 @@ ekspert = "piotr-bombol"
 kiedy = "gdy na stole leży kilka ofert i każda obiecuje co innego."
 
 [[sytuacja]]
+id = "zostajemy-w-tyle"
+etykieta = "Zostajemy w tyle?"
+cytat = "Na każdej konferencji słyszę, że inni mają już AI w całej firmie. Mam wrażenie, że zostajemy w tyle, a nie chcę o to pytać własnych ludzi, bo to ode mnie oczekują odpowiedzi."
+obszar = "strategia"
+wyjdziesz = [
+  "Trzy pytania do zespołu, z których dowiesz się, gdzie naprawdę jesteście.",
+  "Jedną rzecz, którą zaczynacie w tym miesiącu, i jedną, którą możecie pominąć, choć wszyscy o niej mówią.",
+  "Pierwsze zdanie na rozmowę o AI z zarządem, w którym nie musisz udawać, że znasz wszystkie odpowiedzi.",
+]
+zrodlo = "walidacja-2026-10-28-b 07:28-07:55, 25:33-25:42; walidacja-2026-10-28-a 07:50-08:16"
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+dlaczego = "Układa z zarządami plan AI, więc widzi, jak to wygląda w firmach od środka, a nie na slajdach z konferencji."
+[[sytuacja.kto]]
+ekspert = "bartek-lechowski"
+kiedy = "gdy pierwszy krok ma zrobić cały zespół, nie tylko Ty."
+
+[[sytuacja]]
 id = "budzet"
 etykieta = "Budżet na AI"
 cytat = "W grudniu zarząd zatwierdza budżet. Mam przyjść z kwotą na AI na przyszły rok i ją obronić, a oni nie lubią niespodzianek."
@@ -103,6 +121,24 @@ dlaczego = "Zbudował od zera i sprzedał własną agencję, więc budżet zna o
 [[sytuacja.kto]]
 ekspert = "bartek-lechowski"
 kiedy = "gdy kwota zależy od tego, czy zespoły zaczną pracować z AI."
+
+[[sytuacja]]
+id = "koszty-bez-efektow"
+etykieta = "Koszty AI bez efektów"
+cytat = "Od dwóch lat płacimy za AI i widzę to tylko w kosztach. Zespoły raportują, ile osób korzysta z narzędzi, a ja mam pokazać zarządowi, co z tego mamy."
+obszar = "strategia"
+wyjdziesz = [
+  "Dwie miary efektu, które zastąpią w raporcie dla zarządu liczbę aktywnych użytkowników.",
+  "Zdanie dla zarządu: gdzie AI już się zwraca, gdzie jeszcze tego nie wiecie i do kiedy to sprawdzicie.",
+  "Listę wydatków na AI do przejrzenia: co zostaje, a co wstrzymujecie do pierwszego pomiaru.",
+]
+zrodlo = "walidacja-2026-10-28-b 27:27-28:33, 29:29-29:42; walidacja-2026-10-28-b 21:11-21:57 (efekt zamiast wysiłku)"
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+dlaczego = "W Constans odpowiada za strategię i diagnozę: sprawdza, gdzie AI daje firmie efekt, a gdzie tylko kosztuje."
+[[sytuacja.kto]]
+ekspert = "bartek-lechowski"
+kiedy = "gdy efekt zależy od tego, czy zespoły naprawdę zmienią sposób pracy."
 
 [[sytuacja]]
 id = "zespol-sie-boi"
@@ -141,6 +177,24 @@ ekspert = "piotr-bombol"
 kiedy = "gdy zgodę musi dać ktoś z zarządu."
 
 [[sytuacja]]
+id = "rachunek-za-ai"
+etykieta = "Rachunek za AI rośnie"
+cytat = "W zeszłym miesiącu rachunek za AI był prawie dwa razy wyższy, niż zakładaliśmy. Nikt nie umie powiedzieć, kto tyle zużył, a dostawca namawia nas na roczny kontrakt."
+obszar = "technologia"
+wyjdziesz = [
+  "Trzy ustawienia, które ograniczą koszt jeszcze w tym miesiącu, na przykład limity na osobę i alerty budżetowe.",
+  "Stanowisko w sprawie rocznego kontraktu: podpisać, negocjować czy zostać przy płaceniu za zużycie.",
+  "Pytania do IT o to, kto i do czego używa najdroższych modeli.",
+]
+zrodlo = "walidacja-2026-10-28-b 28:54-29:24"
+[[sytuacja.kto]]
+ekspert = "tomasz-kerber"
+dlaczego = "W Constans buduje rozwiązania AI w systemach klientów, więc wie, gdzie powstają koszty i jak je ograniczyć."
+[[sytuacja.kto]]
+ekspert = "piotr-bombol"
+kiedy = "gdy o kontrakcie decyduje zarząd i potrzebujesz zdania na posiedzenie."
+
+[[sytuacja]]
 id = "wlasna-praca"
 etykieta = "Własna praca z AI"
 cytat = "Mój dzień to spotkania i poczta. Chcę, żeby AI co rano układało mi listę zadań z maili i kalendarza, ale na kurs nie mam czasu."
@@ -175,6 +229,24 @@ dlaczego = "Odpowiadał za P&L ponad 540 mln euro i prowadził zmiany w dużych 
 [[sytuacja.kto]]
 ekspert = "piotr-bombol"
 kiedy = "gdy najpierw musisz wytłumaczyć zarządowi, co poszło nie tak."
+
+[[sytuacja]]
+id = "za-wczesnie"
+etykieta = "Za wcześnie na AI?"
+cytat = "Wdrażamy nowy CRM, a dokumenty i tak trafiają na papierze do biura rachunkowego. Chcę od razu dołożyć AI, które samo je przeczyta i roześle dalej, bo wszyscy mówią, że się da."
+obszar = "technologia"
+wyjdziesz = [
+  "Odpowiedź wprost: AI teraz czy dopiero po wdrożeniu CRM, i dlaczego.",
+  "Listę rzeczy, które trzeba uporządkować przed AI, w kolejności i z osobą odpowiedzialną za każdą.",
+  "Jeden mały krok z AI, który nie musi czekać na resztę, albo informację wprost, że takiego nie ma.",
+]
+zrodlo = "walidacja-2026-10-27 16:48-17:48"
+[[sytuacja.kto]]
+ekspert = "tomasz-kerber"
+dlaczego = "Pracuje jako architekt IT, więc oceni, czy Wasze systemy i dokumenty są gotowe na AI, i powie to wprost."
+[[sytuacja.kto]]
+ekspert = "bartek-lechowski"
+kiedy = "gdy zespół jest zmęczony wdrożeniem CRM i nie chce słyszeć o kolejnej zmianie."
 
 [[sytuacja]]
 id = "kupic-czy-zbudowac"

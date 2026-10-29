@@ -434,9 +434,20 @@ def home():
   </div>
   {alt}
 </section>"""
+    # Topic filter above the list once there are enough situations; hidden without JS
+    sit_filter = ""
+    if len(SYT) >= K.get("filtry_sytuacji_od", 10):
+        counts = {k: sum(1 for s in SYT if s["obszar"] == k) for k in OBSZARY}
+        opts = "".join(f'<button type="button" class="chip-btn" data-sit-filter="{k}" aria-pressed="false">'
+                       f'{e(v["etykieta"])} <span class="chip-n">{counts[k]}</span></button>'
+                       for k, v in OBSZARY.items() if counts[k])
+        sit_filter = (f'<div class="sit-filter" role="group" aria-label="{e(SX["filtr_aria"])}">'
+                      f'<button type="button" class="chip-btn" data-sit-filter="" aria-pressed="true">'
+                      f'{e(SX["filtr_wszystkie"])} <span class="chip-n">{len(SYT)}</span></button>{opts}</div>')
     explorer = f"""<section class="section situations" id="sytuacje" aria-labelledby="sytuacje-h">
   <div class="wrap">
     {section_head(SX['tytul'], SX.get('nad', ''), SX.get('lead', ''), '', 'sytuacje-h')}
+    {sit_filter}
     <div class="explorer" data-explorer>
       <div class="sit-list" role="tablist" aria-label="{e(SX['lista_aria'])}" aria-orientation="vertical">{tabs}</div>
       <div class="sit-panels">{panels}</div>
